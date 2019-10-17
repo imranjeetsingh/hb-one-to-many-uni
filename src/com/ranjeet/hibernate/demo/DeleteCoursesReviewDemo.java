@@ -9,7 +9,7 @@ import com.ranjeet.hibernate.entity.Instructor;
 import com.ranjeet.hibernate.entity.InstructorDetail;
 import com.ranjeet.hibernate.entity.Review;
 
-public class ReadCoursesReviewDemo {
+public class DeleteCoursesReviewDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -24,16 +24,14 @@ public class ReadCoursesReviewDemo {
 		Session session = factory.getCurrentSession();
 		
 		try {
-			System.out.println("Reading a new review object ...");
+			System.out.println("Deleting a new review object ...");
 			
 			session.beginTransaction();
 			
 			int id =10;
 			Course tempCourse = session.get(Course.class, id);
 			
-			System.out.println(tempCourse);
-			
-			System.out.println(tempCourse.getReviews());
+			session.delete(tempCourse);
 			session.getTransaction().commit();
 			
 			System.out.println("Done!!!!!!");
