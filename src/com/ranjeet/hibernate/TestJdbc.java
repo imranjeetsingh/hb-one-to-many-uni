@@ -7,7 +7,7 @@ public class TestJdbc {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String jdbcUrl = "jdbc:mysql://localhost:3306/hb-01-one-to-one-uni?useSSL=false&serverTimeTimeZone=UTC";
+		String jdbcUrl = "jdbc:mysql://localhost:3306/hb-04-one-to-many-uni?useSSL=false&serverTimeTimeZone=UTC";
 		String user = "hbstudent";
 		String pass = "hbstudent";
 		try {

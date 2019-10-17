@@ -78,7 +78,7 @@ public class Course {
 	
 	public void addReview(Review theReview) {
 		
-		if(theReview==null) {
+		if(reviews==null) {
 			reviews = new ArrayList<>(); 
 		}
 		reviews.add(theReview);
